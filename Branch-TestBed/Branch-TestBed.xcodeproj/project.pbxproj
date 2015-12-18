@@ -89,6 +89,8 @@
 		37F7252B1C23F22F00A12B23 /* BranchDisconnectDebugRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4642E6A91B1FA2AA006E4C1F /* BranchDisconnectDebugRequest.h */; };
 		37F7252C1C23F22F00A12B23 /* BranchLogRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4642E6AD1B1FA303006E4C1F /* BranchLogRequest.h */; };
 		37F7252D1C23F22F00A12B23 /* BranchConnectDebugRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4642E6A51B1FA1DB006E4C1F /* BranchConnectDebugRequest.h */; };
+		37F7252F1C23F51200A12B23 /* cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 37F7252E1C23F51200A12B23 /* cartfile */; };
+		37F725381C23F8ED00A12B23 /* BranchZero.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F725371C23F8ED00A12B23 /* BranchZero.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		460F4FA71B618A38002E84D6 /* BranchSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 460F4FA51B618A38002E84D6 /* BranchSpotlightUrlRequest.h */; };
 		460F4FA81B618A38002E84D6 /* BranchSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F4FA61B618A38002E84D6 /* BranchSpotlightUrlRequest.m */; };
 		461019461AE551A500379A15 /* BranchNetworkScenarioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 461019451AE551A500379A15 /* BranchNetworkScenarioTests.m */; };
@@ -259,6 +261,10 @@
 		37F724AB1C23933D00A12B23 /* Branch_fmwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Branch_fmwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F724AD1C23933D00A12B23 /* Branch_fmwk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Branch_fmwk.h; sourceTree = "<group>"; };
 		37F724AF1C23933D00A12B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F7252E1C23F51200A12B23 /* cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cartfile; path = ../../cartfile; sourceTree = "<group>"; };
+		37F725351C23F8ED00A12B23 /* BranchZero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BranchZero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F725371C23F8ED00A12B23 /* BranchZero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BranchZero.h; sourceTree = "<group>"; };
+		37F725391C23F8ED00A12B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460F4FA51B618A38002E84D6 /* BranchSpotlightUrlRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchSpotlightUrlRequest.h; sourceTree = "<group>"; };
 		460F4FA61B618A38002E84D6 /* BranchSpotlightUrlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchSpotlightUrlRequest.m; sourceTree = "<group>"; };
 		461019451AE551A500379A15 /* BranchNetworkScenarioTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchNetworkScenarioTests.m; sourceTree = "<group>"; };
@@ -403,6 +409,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37F725311C23F8ED00A12B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466B58351B17773000A69EDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +460,15 @@
 				37F724AF1C23933D00A12B23 /* Info.plist */,
 			);
 			path = Branch_fmwk;
+			sourceTree = "<group>";
+		};
+		37F725361C23F8ED00A12B23 /* BranchZero */ = {
+			isa = PBXGroup;
+			children = (
+				37F725371C23F8ED00A12B23 /* BranchZero.h */,
+				37F725391C23F8ED00A12B23 /* Info.plist */,
+			);
+			path = BranchZero;
 			sourceTree = "<group>";
 		};
 		4659B3471B0FD4430019767C /* BranchRequests */ = {
@@ -548,6 +570,7 @@
 				670016691940F51400A9E103 /* Branch-TestBed */,
 				7E6B3B521AA42D0E005F45BF /* Branch-SDK-Tests */,
 				37F724AC1C23933D00A12B23 /* Branch_fmwk */,
+				37F725361C23F8ED00A12B23 /* BranchZero */,
 				670016621940F51400A9E103 /* Frameworks */,
 				670016611940F51400A9E103 /* Products */,
 			);
@@ -560,6 +583,7 @@
 				7E6B3B511AA42D0E005F45BF /* Branch-SDK-Tests.xctest */,
 				466B58381B17773000A69EDE /* libBranch.a */,
 				37F724AB1C23933D00A12B23 /* Branch_fmwk.framework */,
+				37F725351C23F8ED00A12B23 /* BranchZero.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -648,6 +672,7 @@
 				54FF1F8C1BD1D4AE0004CE2E /* BranchUniversalObject.m */,
 				54FF1F8F1BD1DC320004CE2E /* BranchLinkProperties.h */,
 				54FF1F901BD1DC320004CE2E /* BranchLinkProperties.m */,
+				37F7252E1C23F51200A12B23 /* cartfile */,
 			);
 			name = "Branch-SDK";
 			path = "../Branch-SDK/Branch-SDK";
@@ -733,6 +758,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37F725321C23F8ED00A12B23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F725381C23F8ED00A12B23 /* BranchZero.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466B58711B1777F300A69EDE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -799,6 +832,24 @@
 			name = Branch_fmwk;
 			productName = Branch_fmwk;
 			productReference = 37F724AB1C23933D00A12B23 /* Branch_fmwk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		37F725341C23F8ED00A12B23 /* BranchZero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F7253A1C23F8ED00A12B23 /* Build configuration list for PBXNativeTarget "BranchZero" */;
+			buildPhases = (
+				37F725301C23F8ED00A12B23 /* Sources */,
+				37F725311C23F8ED00A12B23 /* Frameworks */,
+				37F725321C23F8ED00A12B23 /* Headers */,
+				37F725331C23F8ED00A12B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BranchZero;
+			productName = BranchZero;
+			productReference = 37F725351C23F8ED00A12B23 /* BranchZero.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		466B58371B17773000A69EDE /* Branch */ = {
@@ -869,6 +920,9 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = R63EM248DP;
 					};
+					37F725341C23F8ED00A12B23 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					466B58371B17773000A69EDE = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -902,12 +956,20 @@
 				6700165F1940F51400A9E103 /* Branch-TestBed */,
 				7E6B3B501AA42D0E005F45BF /* Branch-SDK-Tests */,
 				37F724AA1C23933D00A12B23 /* Branch_fmwk */,
+				37F725341C23F8ED00A12B23 /* BranchZero */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		37F724A91C23933D00A12B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F725331C23F8ED00A12B23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -929,6 +991,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F7252F1C23F51200A12B23 /* cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,6 +1041,13 @@
 				37F724D91C23943100A12B23 /* BNCStrongMatchHelper.m in Sources */,
 				37F724E11C23977A00A12B23 /* BranchSetIdentityRequest.m in Sources */,
 				37F724CE1C23943100A12B23 /* BNCLinkData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F725301C23F8ED00A12B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,6 +1234,63 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "branchmetrics.io.Branch-fmwk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37F7253B1C23F8ED00A12B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BranchZero/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = branchmetrics.io.BranchZero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37F7253C1C23F8ED00A12B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BranchZero/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = branchmetrics.io.BranchZero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1374,6 +1501,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		37F7253A1C23F8ED00A12B23 /* Build configuration list for PBXNativeTarget "BranchZero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F7253B1C23F8ED00A12B23 /* Debug */,
+				37F7253C1C23F8ED00A12B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		466B584D1B17773000A69EDE /* Build configuration list for PBXNativeTarget "Branch" */ = {
 			isa = XCConfigurationList;
