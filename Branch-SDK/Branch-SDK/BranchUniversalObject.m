@@ -125,13 +125,22 @@
 }
 
 - (void)showShareSheetWithLinkProperties:(BranchLinkProperties *)linkProperties andShareText:(NSString *)shareText fromViewController:(UIViewController *)viewController andCallback:(callback)callback {
-    UIActivityItemProvider *itemProvider = [self getBranchActivityItemWithLinkProperties:linkProperties];
-    NSMutableArray *items = [NSMutableArray arrayWithObject:itemProvider];
+       NSArray *shareItems;
     if (shareText) {
-        [items addObject:shareText];
+        shareItems = @[shareText];
     }
+    else {
+        shareItems = @[];
+    }
+    [self showShareSheetWithLinkProperties:linkProperties andShareItems:shareItems fromViewController:viewController andCallback:callback];
+}
+
+- (void)showShareSheetWithLinkProperties:(BranchLinkProperties *)linkProperties andShareItems:(NSArray *)shareItems fromViewController:(UIViewController *)viewController andCallback:(callback)callback {
+    UIActivityItemProvider *itemProvider = [self getBranchActivityItemWithLinkProperties:linkProperties];
+    NSMutableArray *items = [NSMutableArray arrayWithArray:shareItems];
+    [items addObject:itemProvider];
     UIActivityViewController *shareViewController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:nil];
-    
+     
     UIViewController *presentingViewController;
     if (viewController && [viewController respondsToSelector:@selector(presentViewController:animated:completion:)]) {
         presentingViewController = viewController;
