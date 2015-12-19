@@ -138,7 +138,7 @@
 - (void)showShareSheetWithLinkProperties:(BranchLinkProperties *)linkProperties andShareItems:(NSArray *)shareItems fromViewController:(UIViewController *)viewController andCallback:(callback)callback {
     UIActivityItemProvider *itemProvider = [self getBranchActivityItemWithLinkProperties:linkProperties];
     NSMutableArray *items = [NSMutableArray arrayWithArray:shareItems];
-    [items addObject:itemProvider];
+    [items insertObject:itemProvider atIndex:0];
     UIActivityViewController *shareViewController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:nil];
      
     UIViewController *presentingViewController;
